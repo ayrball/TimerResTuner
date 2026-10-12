@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>TimerResTuner</AssemblyName>
+    <RootNamespace>TimerResTuner</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <!-- Optional test-build stamp (see build-tester.ps1). Normal builds leave these unset and are unrestricted:
+         dotnet publish -c Release -p:TesterId=Alex -p:ExpiresOn=2026-10-25 -->
+  <ItemGroup Condition="'$(TesterId)' != ''">
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>TesterId</_Parameter1>
+      <_Parameter2>$(TesterId)</_Parameter2>
+    </AssemblyAttribute>
+  </ItemGroup>
+  <ItemGroup Condition="'$(ExpiresOn)' != ''">
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>ExpiresOn</_Parameter1>
+      <_Parameter2>$(ExpiresOn)</_Parameter2>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>
