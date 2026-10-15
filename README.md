@@ -58,3 +58,9 @@ does not need .NET installed (`-FrameworkDependent` makes it smaller if they do 
 
 This is a deterrent, not DRM: someone determined can set their clock back. Plain `dotnet publish` produces an
 unstamped, unrestricted build.
+
+## License
+
+Licensed under the [PolyForm Noncommercial License 1.0.0](LICENSE). You are free to use, modify and share this for personal, hobby, educational, research and other noncommercial purposes.
+
+**Commercial use** (selling it, building a paid product or service on it, or using it in a business) needs a separate license from the author. Commercial licenses are available: get in touch via [github.com/ayrball](https://github.com/ayrball) to discuss terms.
